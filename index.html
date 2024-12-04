@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>KVWIMS - Knowledge and Visualization Warehouse and Inventory Management System</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="index.css">
+      <link rel="icon" type="image/x-icon" href="octopus.svg">
+      <script src="src/main.js" type="module" defer></script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <header class="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="flex flex-row text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                  <img src="octopus.svg" width="32px" alt="KVWIMS Logotype (an octopus)">
+                  KVWIMS
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#section-features" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Features</a>
+                <a href="#section-details" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Details</a>
+                <a href="#section-contact" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Contact</a>
+            </div>
+
+            <!-- Language Options -->
+            <div class="hidden md:flex space-x-4">
+                <a href="/index.html" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">EN</a>
+                <a href="/index-es.html" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">ES</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div id="mobile-nav" class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#section-features" class="block px-4 py-2 text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Features</a>
+            <a href="#section-details" class="block px-4 py-2 text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Details</a>
+            <a href="#section-contact" class="block px-4 py-2 text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">Contact</a>
+            <!-- Mobile Language Options -->
+            <div class="flex space-x-4 px-4 py-2">
+                <a href="/index.html" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">EN</a>
+                <a href="/index-es.html" class="text-gray-600 lg:hover:text-indigo-600 dark:text-gray-300 dark:lg:hover:text-indigo-400">ES</a>
+            </div>
+        </div>
+    </header>
+  
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="bg-gradient-to-r from-indigo-500 via-blue-500 to-orange-500 opacity-30 filter blur-2xl h-full w-full"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 dark:text-gray-100">Efficient Inventory & Warehouse Management</h1>
+                <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">Streamline your inventory with our cutting-edge management system.</p>
+            </div>
+
+            <div class="mt-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                  <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Inventory Management</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Efficiently monitor and control your inventory levels using our integrated point-of-sale, restocking, and waste management interfaces.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Warehouse Management</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Streamline the organization of multiple warehouses with our intuitive 2D visualization and management tools.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Decision Support</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Make informed decisions based on actionable insights derived from your business transactions and analytics.</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-features" class="relative bg-fixed bg-center bg-cover" style="background-image: url('bg-0.webp');">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-blur-sm"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="flex flex-col items-center space-y-8 text-center text-white">
+                <h2 class="text-3xl font-bold">Optimize Your Inventory Today</h2>
+                <p class="mt-4 text-lg">KVWIMS is a warehouse and inventory management system tailored for convenience stores yet adaptable to other businesses. It streamlines inventory control by integrating point-of-sale, restocking, waste management and custom or automatic promotions. Organize warehouses with intuitive 2D tools and make informed decisions using actionable insights from your business transactions. <mark>Watch our video demo to see KVWIMS in action.</mark></p>
+
+                <iframe id="video-demo" src="https://www.youtube.com/embed/WobW_KFwA1M" title="KVWIMS - Demo Reel Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-details" class="relative bg-fixed bg-center bg-cover">
+        <div class="absolute inset-0 bg-gray-100 dark:bg-gray-900"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="text-center dark:text-white">
+                <h2 class="text-3xl font-bold">User Management Functionality</h2>
+                <p class="mt-4 text-xl">KVWIMS includes robust user management features that enable administrators to add new users and suspend existing ones with ease. The system implements a basic permissions framework, granting higher privileges to manager-level users who have access to advanced functionalities and administrative controls. In contrast, member-level users are restricted to essential operations, such as using the point-of-sale (POS) system. This hierarchical permission structure ensures that users have access only to the features necessary for their roles, enhancing both security and operational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inventory-management" class="relative bg-fixed bg-center bg-cover">
+      <div class="absolute inset-0 bg-gray-100 dark:bg-gray-900"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <!-- Main Paragraph -->
+              <div class="dark:text-white">
+                  <h2 class="text-3xl font-bold">Inventory Management</h2>
+                  <p class="mt-4 text-xl">
+                      KVWIMS offers a comprehensive inventory management system through its integrated interfaces for product registration and classification, point-of-sale (POS), restocking, and waste management. These tools enable businesses to efficiently track and manage inventory levels in real-time. By seamlessly recording sales transactions, managing replenishments, and monitoring waste, KVWIMS helps optimize stock control, reduce losses, and improve overall operational efficiency.
+                  </p>
+              </div>
+              <!-- Cards -->
+              <div class="grid grid-cols-1 gap-6">
+                  <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                      <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Point of Sale (POS)</h3>
+                      <p class="mt-2 text-gray-600 dark:text-gray-300">
+                          Accurately record sales transactions to automatically adjust inventory levels and provide real-time stock updates.
+                      </p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                      <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Restocking Interface</h3>
+                      <p class="mt-2 text-gray-600 dark:text-gray-300">
+                          Manage replenishments efficiently by tracking incoming stock and updating inventory accordingly.
+                      </p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                      <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Waste Management</h3>
+                      <p class="mt-2 text-gray-600 dark:text-gray-300">
+                          Monitor and record waste to adjust inventory levels and minimize losses due to spoilage or damage.
+                      </p>
+                  </div>
+                  <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Promotions</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">
+                      Implement custom or automatically generated discount promotions based on sales data.
+                    </p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  
+  <section id="warehouse-management" class="relative bg-fixed bg-center bg-cover">
+    <div class="absolute inset-0 bg-gray-100 dark:bg-gray-900"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Images -->
+            <div class="flex justify-center">
+                <!-- Replace 'warehouse-image.jpg' with your actual image file -->
+                 <a href="warehouse-editor.png">
+                   <img src="warehouse-editor.png" alt="2D Warehouse Layout" class="w-full h-auto rounded-lg shadow-lg">
+                 </a>
+            </div>
+            <!-- Text Content -->
+            <div class="dark:text-white">
+                <h2 class="text-3xl font-bold">Warehouse Management</h2>
+                <p class="mt-4 text-xl">
+                    KVWIMS provides an intuitive 2D warehouse management tool that enables you to visualize and organize your warehouse layout effectively. Add shelves and assign products to them using a top-down projection, making it easy to manage your physical space. The system also suggests optimal rearrangements based on the warehouse priority entrances and historical data metrics —such as most or least sold items, average time in inventory, and active promotions —to optimize efficiency and productivity.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="knowledge-visualization" class="relative bg-fixed bg-center bg-cover">
+  <div class="absolute inset-0 bg-gray-100 dark:bg-gray-900"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <!-- Text Content -->
+      <div class="text-center dark:text-white">
+          <h2 class="text-3xl font-bold">Knowledge and Visualization</h2>
+          <p class="mt-4 text-xl">
+              Gain comprehensive insights into your business by visualizing key performance indicators (KPIs) on a centralized dashboard. Our advanced sales forecasting algorithm helps you anticipate future trends, enabling you to make informed decisions and take proactive actions based on real-time data.
+          </p>
+      </div>
+      <!-- Images -->
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="flex justify-center">
+            <a target="_blank" href="dashboard-kpi-example.png">
+              <img src="dashboard-kpi-example.png" alt="Dashboard KPI Visualization" class="w-full h-auto rounded-lg shadow-lg">
+            </a>
+          </div>
+          <div class="flex justify-center">
+            <a target="_blank" href="sales-forecast.png">
+              <img src="sales-forecast.png" alt="Sales Forecasting Graph" class="w-full h-auto rounded-lg shadow-lg">
+            </a>
+          </div>
+          <div class="flex justify-center">
+            <a href="actionable-insights.png" target="_blank">
+              <img src="actionable-insights.png" alt="Actionable Insights" class="w-full h-auto rounded-lg shadow-lg">
+            </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer id="section-contact" class="bg-gray-100 dark:bg-gray-900 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:justify-between md:items-center">
+
+          <div class="mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">KVWIMS</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="#" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">Start</a></li>
+                <li><a href="#section-features" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">Features</a></li>
+                  <li><a href="#section-details" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">User Management</a></li>
+                  <li><a href="#inventory-management" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">Inventory Management</a></li>
+                  <li><a href="#warehouse-management" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">Warehouse Management</a></li>
+                  <li><a href="#knowledge-visualization" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">Knowledge & Visualization</a></li>
+              </ul>
+          </div>
+
+          <div>
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Contact</h3>
+              <ul class="mt-4 space-y-2">
+                  <li>
+                      <a href="https://github.com/gismael-gzn" target="_blank" class="flex items-center text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">
+                          <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 17.3033 3.43857 21.803 8.20503 23.3857C8.80597 23.4994 9.02549 23.1788 9.02549 22.8982C9.02549 22.6476 9.01593 22.0654 9.01125 21.2328C5.67225 21.9421 4.96812 19.7666 4.96812 19.7666C4.45347 18.4843 3.6929 18.1628 3.6929 18.1628C2.63477 17.4948 3.77607 17.5111 3.77607 17.5111C4.95312 17.5886 5.57298 18.6927 5.57298 18.6927C6.62168 20.3745 8.22905 19.8795 8.82396 19.6023C8.9293 18.8626 9.20273 18.3309 9.51145 18.042C6.94358 17.7532 4.28683 16.6858 4.28683 11.8772C4.28683 10.5379 4.74645 9.42945 5.54542 8.55314C5.41335 8.26351 5.00218 6.98063 5.65048 5.23364C5.65048 5.23364 6.69622 4.91342 8.9936 6.5393C9.98165 6.26875 11.0352 6.13311 12.0888 6.12894C13.1424 6.13311 14.1959 6.26875 15.184 6.5393C17.4813 4.91342 18.5271 5.23364 18.5271 5.23364C19.1754 6.98063 18.7642 8.26351 18.6321 8.55314C19.4311 9.42945 19.8907 10.5379 19.8907 11.8772C19.8907 16.6985 17.2294 17.7476 14.6555 18.0343C15.0668 18.4048 15.4422 19.1642 15.4422 20.2991C15.4422 21.8139 15.4266 22.9355 15.4266 22.8982C15.4266 23.1788 15.6461 23.504 16.2516 23.3857C20.9587 21.7928 24 17.2997 24 12C24 5.37258 18.6274 0 12 0Z" clip-rule="evenodd"/>
+                          </svg>
+                          GitHub
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/in/gerardo-ismael-garz%C3%B3n-dom%C3%ADnguez-b75ba3290/" target="_blank" class="flex items-center text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">
+                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 448 512" aria-hidden="true">
+                          <path d="M100.28 448H7.4V149.1h92.88V448zM53.79 108.1C24.09 108.1 0 83.96 0 54.05 0 24.15 24.09 0 53.79 0c29.7 0 53.79 24.15 53.79 54.05 0 29.91-24.09 54.05-53.79 54.05zM447.9 448h-92.1V302.4c0-34.69-12.4-58.4-43.6-58.4-23.77 0-37.87 15.96-44.05 31.31-2.27 5.5-2.84 13.2-2.84 20.91V448h-92.1V149.1h88.45v40.96h1.27c12.34-19.29 34.23-46.17 83.8-46.17 61.2 0 107.1 40.01 107.1 126.09V448z"/>
+                      </svg>                      
+                          LinkedIn
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://gismael.dev" target="_blank" class="flex items-center text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">
+                          <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12 12c2.76142 0 5-2.23858 5-5s-2.23858-5-5-5-5 2.23858-5 5 2.23858 5 5 5zm0 2c-3.866 0-7 3.13401-7 7h2c0-2.76142 2.2386-5 5-5s5 2.23858 5 5h2c0-3.86599-3.134-7-7-7z" clip-rule="evenodd"/>
+                          </svg>
+                          gismael.dev
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-300 dark:border-gray-700">
+      <div class="text-center text-gray-600 dark:text-gray-400">
+          &copy; <span id="current-year"></span> KVWIMS. All rights reserved.
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

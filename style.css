@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+mark {
+  background-color: orange;
+  color: white;
+}
+
+#video-demo {
+  width: 350px;
+  height: 250px;
+}
+
+@media screen and (min-width: 1024px) {
+  #video-demo {
+    width: 900px;
+    height: 500px;
+  }  
+}
+
